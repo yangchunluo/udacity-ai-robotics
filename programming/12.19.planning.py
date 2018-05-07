@@ -1,3 +1,5 @@
+# https://classroom.udacity.com/courses/cs373/lessons/48646841/concepts/486468400923
+
 # ----------
 # User Instructions:
 # 
@@ -91,8 +93,6 @@ def optimum_policy2D(grid, init, goal, cost):
             delta = forward[next_head]
             next_y = cu_y + delta[0]
             next_x = cu_x + delta[1]
-            if cu_y ==0 and cu_x==5 or cu_y==2 and cu_x==3:
-                print n, next_y, next_x, forward_name[next_head]
 
             if not (next_y >= 0 and next_y < len(grid) and
                     next_x >= 0 and next_x < len(grid[0])):
